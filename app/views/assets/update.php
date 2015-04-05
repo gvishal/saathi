@@ -110,46 +110,43 @@
                             Update an Asset<br/>
                         </h1>
                         <br /><br />
-
-                        <?php
-                        if ($is_success !== null) {
-                            if ($is_success == true) {
-                                echo "<div class='alert alert-success'>Asset Updated</div>";
-                            }
-                            else {
-                                echo "<div class='alert alert-danger'>Asset not updated</div>";
-                            }
-                            echo "<br />";
-                        }
-                        ?>
-
-                        <form action='' method='POST'>
-                            <fieldset>
-                                <div class="panel panel-primary">
-                                    <div class="panel-heading" style="font-size: large; padding-bottom: 15px">
-                                        <b>Asset Details</b>
-                                        <div class="btn btn-info" id="show" style="float: right">Hide</div>
-                                    </div>
-
-                                    <input id="id" type="hidden" name="id" value="<?php echo $id ?>" required/><br>
-
-                                    <div class="panel-body" id="panelBody">
-                                        <label for="name">Asset Name </label>
-                                        <input id="name" class="form-control" placeholder="Enter Asset Name" name='name' value="<?php echo $name ?>" required/><br>
-                                        <label for="desc">Description </label>
-                                        <input id="desc" class="form-control" placeholder="Enter Description" name='description' value="<?php echo $description ?>" /><br>
-                                    </div>
-                                </div>
-                            </fieldset>
-                            <div class="col-sm-8 col-md-4">
-                            </div>
-                            <div class="col-sm-8 col-md-4" style="padding-top: 12px;">
-                                <input class="btn btn-success btn-block" type="submit" name="submit" value="Update Asset" />
-                            </div>
-                        </form>
-                        <br>
-
                     </div>
+                    <?php
+                    if ($is_success !== null) {
+                        if ($is_success == true) {
+                            echo "<div class='alert alert-success'>Asset Updated</div>";
+                        }
+                        else {
+                            echo "<div class='alert alert-danger'>Asset not updated</div>";
+                        }
+                        echo "<br />";
+                    }
+                    ?>
+
+                    <form action='' method='POST'>
+                        <fieldset>
+                            <input id="id" type="hidden" name="id" value="<?php echo $id ?>" required/><br>
+                            <div class="panel panel-primary">
+                                <div class="panel-heading" style="font-size: large; padding-bottom: 15px">
+                                    <b>Asset Details</b>
+                                    <div class="btn btn-info" id="show" style="float: right">Hide</div>
+                                </div>
+
+                                <div class="panel-body" id="panelBody">
+                                    <label for="name">Asset Name </label>
+                                    <input id="name" class="form-control" placeholder="Enter Asset Name" name='name' value="<?php echo $name ?>" required/><br>
+                                    <label for="desc">Description </label>
+                                    <input id="desc" class="form-control" placeholder="Enter Description" name='description' value="<?php echo $description ?>" /><br>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="col-sm-8 col-md-4">
+                        </div>
+                        <div class="col-sm-8 col-md-4" style="padding-top: 12px;">
+                            <input class="btn btn-success btn-block" type="submit" name="submit" value="Update Asset" />
+                        </div>
+                    </form>
+                    <br>
                 </div>
             </div>
         </div>

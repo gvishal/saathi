@@ -121,7 +121,7 @@
 
                             <a href="update?id=<?php echo $assets['id'] ?>">
 
-                                <div class='btn btn-success update' style='float: right;'>Update</div>
+                                <div class='btn btn-success update' style='float: right;margin-right: 8px;'>Update</div>
                             </a>
                         </div>
                         <div class='panel-body' id='panelBody1' style='display: none;'>
